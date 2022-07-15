@@ -12,18 +12,4 @@
 # name = input("Enter your name: ")
 # print("Hello, " + name + " how are you doing?")
 
-a = "1"
-print(float(a))
-
-b = float("2.5")
-print(int(b))
-
-c = 1
-print(bool(c))
-
-d = ''
-print(bool(d))
-
-e = 0
-print(bool(e))
 
