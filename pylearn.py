@@ -53,3 +53,31 @@ str2 = input()
 
 r = my_func(str1, str2)
 print(r)
+
+#Задание 3.jpg. Оценки.
+school_score = [
+    {"school_class": "1a", "scores": [5, 5, 5, 5, 2]},
+    {"school_class": "1b", "scores": [4, 4, 4, 2, 3]},
+    {"school_class": "1c", "scores": [1, 2, 3, 4, 5]},
+    {"school_class": "1d", "scores": [4, 3, 3, 3, 5]},
+]
+for score in school_score:
+    counter = score.get("scores")
+    every_class = 0
+    for i in counter:
+        every_class += i
+
+    score.update({'total_class_score': every_class / len(counter)})
+    print(f'{score.get("school_class")} {score.get("total_class_score")}')
+
+# total_school_score = 0
+for a in school_score:
+    total_school_score = 0
+    asd = a.get("scores")
+    jopa = len(asd)
+    # print(jopa)
+    for i in asd:
+        total_school_score += i
+        idk = total_school_score / jopa
+
+print("total school score:",idk)
