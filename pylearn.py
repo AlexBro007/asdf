@@ -54,6 +54,8 @@ str2 = input()
 r = my_func(str1, str2)
 print(r)
 
+#Цикл for
+
 #Задание 3.jpg. Оценки.
 school_score = [
     {"school_class": "1a", "scores": [5, 5, 5, 5, 2]},
@@ -81,3 +83,44 @@ for a in school_score:
         idk = total_school_score / jopa
 
 print("total school score:",idk)
+
+
+#Цикл while 
+
+
+#Задание.jpg (1)
+spisok = ["Валера","Вася", "Маша", "Петя", "Саша", "Даша"]
+count = 0
+while True:
+    count+=1
+    search=spisok.pop()
+    if search == "Валера":
+        print("Валера нашелся на попытке №", count,".......")
+        break
+    else:
+        print("ахх.. где же валера... Попытка найти №", count)
+
+#(2 v2 but the problem isnt fixed =))
+spisok = ["Валера","Вася", "Маша", "Петя", "Саша", "Даша"]
+
+def find_person(input):
+    name = input("enter the name: ")
+    if name in spisok:
+        print("gz man, the name {}".format(name), "exists")
+    elif name != spisok:
+        print("cant find entered name. try again")
+        return name
+while True:
+    if find_person(input) == "quit":
+        print("quiting=)...")
+        break
+
+#(3)
+def ask_user():
+    aboba = input("how is it going?: ")
+    return aboba
+
+while True:
+    if ask_user() == "im good":
+        print("cya")
+        break
