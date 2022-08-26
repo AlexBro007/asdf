@@ -124,3 +124,27 @@ while True:
     if ask_user() == "im good":
         print("cya")
         break
+
+#(4)
+while True:
+    aboba = input("how is it going?: ")
+    def ask_user(aboba):
+        asd = aboba
+        return asd
+    if ask_user(aboba) == "im good":
+        print("cya =)")
+        break
+    elif ask_user(aboba) == "goodbye":
+        print("cya =)")
+        break
+
+
+    def get_answer():
+        a = aboba.endswith("?")
+        return a
+    if get_answer():
+        print("ананас")
+        continue
+    else:
+        print("дурак?")
+        continue
